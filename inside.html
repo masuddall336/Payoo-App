@@ -34,7 +34,8 @@
     </div>
 
     <div class="tranjection grid grid-cols-3 justify-items-center gap-5">
-        <div class="single_card_wrapper card bg-base-100 w-56 shadow-sm ">
+        <!-- add Money -->
+        <div id="add" class="single_card_wrapper addMoney card bg-base-100 w-56 shadow-sm ">
             <div>
                 <figure class="mt-5">
                     <img src="/photos/wallet1.png" alt="">
@@ -96,6 +97,33 @@
         </div>
     </div>
 
+    <div class=" flex-col mt-5 justify-items-center ">
+        <h1 class="text-2xl font-bold">Add Money</h1>
+        <form action="">
+            <div>
+                <h2 class="text-xl font-bold mb-2 mt-10">Select Bank</h2>
+                <input class=" border-none bg-slate-300 rounded-full p-3" list="bankName" name="bankName" /></label>
+                <datalist id="bankName">
+                    <option value="Brac Bank">
+                    <option value="IFIC Bank">
+                    <option value="Islamic Bank">
+                    <option value="Pubali Bank">
+                    <option value="Shonali Bank">
+                    <option value="Janata Bank">
+                </datalist>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-2 mt-10">Ammount</h2>
+                <input class=" border-none bg-slate-300 rounded-full p-3" type="number">
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-2 mt-10 ">Password</h2>
+                <input class=" border-none bg-slate-300 rounded-full p-3" type="password">
+            </div>
+            <button class="btn  mt-5 rounded-full bg-[orange]" type="submit">Submit Ammount</button>
+        </form>
+    </div>
+
 
 
 
@@ -104,6 +132,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
